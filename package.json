@@ -1,0 +1,28 @@
+{
+  "name": "test-payment-api",
+  "version": "1.0.0",
+  "private": true,
+  "description": "test-payment-api",
+  "author": "JOi Chao",
+  "keywords": [
+    "gatsby"
+  ],
+  "scripts": {
+    "build": "GATSBY_EXPERIMENTAL_PAGE_BUILD_ON_DATA_CHANGES=true gatsby build --log-pages",
+    "serve": "gatsby serve",
+    "clean": "rm -rf public && rm -rf .cache",
+    "dev": "NODE_ENV=development yarn && gatsby develop -H 0.0.0.0",
+    "develop": "gatsby develop",
+    "format": "prettier --write src/**/*.{js,jsx}",
+    "start": "yarn develop",
+    "prebuild": "gatsby clean && yarn clean && yarn"
+  },
+  "dependencies": {
+    "express": "^4.17.3",
+    "gatsby": "^4.9.3",
+    "nodemon": "^2.0.15",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "stripe": "^8.209.0"
+  }
+}
